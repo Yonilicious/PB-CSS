@@ -1,0 +1,504 @@
+pre br {
+    line-height:0px;
+    display:none;
+}
+
+ul.collage_images {
+    padding: 0px;
+    /* width: 590px; */
+    border-collapse: collapse;
+}
+
+.collage_images {
+    display: table;
+}
+
+ul.collage_images li {
+    border: none;
+    float: left;
+    margin: 0;
+    list-style: none;
+    list-style-type: none;
+   /*  min-height: 180px;
+    max-height: 280px;
+    min-width: 160px;
+    max-width: 160px;
+   */
+    max-height: 350px;
+    min-width: 200px;
+    max-width: 200px;
+    text-align: center;
+    padding: 5px 3px ;
+}
+
+ul.collage_images li a {
+    display: block;
+    overflow: hidden;
+}
+
+ul.collage_images img {
+    max-height: 350px;
+    min-width: 200px;
+    max-width: 200px;
+}
+
+
+div.noimagepad {
+}
+div.noimage {
+    padding: 10px 5px 10px;
+}
+
+
+.selected a{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.collage td {
+    padding: 0px;
+    border: none;
+}
+
+.line_new {
+    color: green;
+}
+
+.line_deleted {
+    color: red;
+}
+
+.line_moved {
+    color: blue;
+}
+
+.line_unchanged {
+
+}
+
+.log1 {
+
+}
+
+.log2 {
+    color: yellow;
+}
+
+.log3 {
+    color: #0E88C6;
+}
+
+.log4 {
+    font-weight: bold;
+}
+
+.log5 {
+    text-decoration: underline;
+}
+
+.good {
+    font-weight: bold;
+    color: green;
+}
+
+.bad {
+    font-weight: bold;
+    color: red;
+}
+
+.goodish {
+    font-weight: bold;
+    color: #35BF00;
+}
+
+.badish {
+    font-weight: bold;
+    color: #E5B244;
+}
+
+pre {
+    overflow: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.disable_grouping {
+    display: none;
+}
+
+form textarea, form input {max-width:100%;}
+
+a.beta {
+    font-weight: bold;
+    color: #ff0000;
+}
+strong.important_text {
+    color: red;
+    font-weight: bold;
+}
+.invalid, .warning, .error {
+    color: #ff0000;
+}
+
+/* Make [+] on add multiple artists stay at the bottom (on torrent details page) */
+div#AddArtists {
+    position: relative;
+}
+
+div#AddArtists a {
+    position: absolute;
+    right: 0pt;
+    bottom: 0pt;
+}
+
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.new-subscriptions {
+    font-weight: bold;
+}
+
+.scale_image {
+    max-width: 100%;
+    margin: 5px;
+}
+.thumb_image {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 5px;
+}
+
+/*
+#torrents .scale_image, #upload .scale_image {
+      max-width: 100%;
+}
+
+*/
+.breadcrumbs { font-weight: bold; text-align: right; }
+
+
+.warnbox {
+    background-color: #f99;border: 2px solid #600;color: darkblue;font-size: 1.2em;padding:5px;
+}
+
+/*
+        NEW CODE: jQuery UI Slider
+        http://jqueryui.com/demos/slider/
+        */
+
+        #latestTorrentsWrapper {
+
+        }
+
+        #latestTorrentsWrapper .pad {
+                padding: 10px 0px 0px 0px !important;
+                margin: 0px 0px 0px 0px !important;
+        }
+
+        #latestTorrents {
+                overflow: auto;
+                width: 100%;
+                float: left;
+                height: 148px;
+        }
+
+        #latestTorrents #ltItems {
+                width: 2600px;
+                float: left;
+                height: 120px;
+        }
+
+        #latestTorrents #ltItems .ltItem {
+                float: left;
+                margin: 0px 5px 0px 5px;
+        }
+
+        #latestTorrents #ltScrollbarWrapper {
+                clear: left;
+                padding-right: 37px;
+                margin: 0px 0px 0px 0px;
+                position:relative;
+                top: 10px;
+                height: 10px;
+    border-radius: 4px;
+        }
+
+        #latestTorrents #ltScrollbarWrapper #ltScrollbar {
+                border: 0px;
+        }
+
+
+
+/* DROPDOWN STUFF */
+
+.potato-menu {
+  margin:0;
+  padding:0;
+  width:auto;
+  list-style:none;
+}
+.potato-menu:after {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0.1px;
+  font-size: 0.1em;
+  line-height: 0;
+}
+.potato-menu .potato-menu-item {
+  padding:0;
+  position:relative;
+  list-style:none;
+  list-style-position:outside;
+  display:inline;
+  margin:0;
+  float:left;
+}
+.potato-menu .potato-menu-item a {
+  display:block;
+  text-decoration:none;
+  white-space:nowrap;
+  outline:0;
+}
+.potato-menu .potato-menu-group {
+  margin:0;
+  padding:0;
+  -webkit-padding-start:0;
+  -webkit-padding-end:0;
+  position:absolute;
+  display:none;
+  z-index:1000;
+}
+/* DROPDOWN STYLES */
+ #menu1 {
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 625px;
+  visibility: hidden;
+  }
+    .potato-menu-item {
+  color: #f9f9f9 !important;
+  font-size:12px;
+  text-shadow: 1px 1px 1px #111;
+  padding-left:5px !important; 		/* Sorry for using !important -TC */
+  padding-top:5px !important; 		/* I should get killed for this -TC */
+  padding-bottom:5px !important;		/* Should actually just combine it, bleh. -TC */
+  width: 120px;
+    }
+    .potato-menu-group {
+        z-index:1000;
+  text-align:left;
+  margin-top:5px !important; 		/* I should get killed for this -TC */
+    }
+    .potato-menu-item a {
+        padding:0px 20px 0px 12px;
+        color: #fff;
+    }
+    .potato-menu-hover {
+        background: rgba(0,0,0,0.5);
+    }
+    .potato-menu-has-vertical > a {
+    }
+    .potato-menu-has-horizontal > a {
+    }
+    .potato-menu-item ul {
+        border-bottom:2px solid #444;
+
+    }
+/* END DROPDOWN STUFF */
+
+/* FLOT stuff */
+.legend > table {
+    width: inherit;
+}
+
+/* Grid View stuff */
+.torrent_grid {
+  background: black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+.torrent_grid__torrent {
+  width: 20%;
+  height: 0px;
+  padding-top: 20%;
+  float: left;
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.torrent_grid__torrent__cat {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 15px;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.torrent_grid__torrent__info {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  box-sizing: border-box;
+  transition: .1s ease;
+  font-size: 13px;
+}
+
+.torrent_grid__torrent__info h3 {
+  font-weight: normal;
+  font-size: 1.2em;
+  color: #cccccc;
+}
+
+.torrent_grid__torrent:hover h3 {
+  color: white;
+}
+
+.torrent__size {
+  color: #ccc;
+  border: 1px solid #888;
+  padding: 0px 2px;
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 2px;
+}
+
+h3 .torrent__size {
+  border-color: rgb(226, 226, 226);
+  color: rgb(226, 226, 226);
+  position: relative;
+  font-size: 13px;
+  top: -2px;
+  margin-right: 2px;
+  margin-left: 0;
+}
+
+@media (max-width: 1200px) {
+  .torrent_grid__torrent__info h3 {
+    font-size: 1em;
+  }
+}
+
+.torrent_grid__torrent__info h3:hover {
+  text-decoration: underline;
+}
+
+.newtime{
+  position: absolute;
+  down: 0;
+  right: 0;
+  padding: 0px 5px;
+}
+
+.torrent_grid__torrent__info .uploader a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.seeders, .leechers {
+  margin-right: 5px;
+}
+
+.seeders svg, .leechers svg {
+  position: relative;
+  top: 4px;
+  margin-right: -2px
+}
+
+span[style="color: #FF0000;"] {
+  color: #ff4646 !important;
+}
+
+.torrent--freeleech {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute; top: 5px; right: 5px; padding: 10px 10px;
+}
+
+.torrent_grid__torrent:visited h3, .uploader a:visited {
+  color: #FF1493;
+}
+
+.torrent__info_extra {
+  bottom: 9px;
+  right: 8px;
+}
+
+.torrent__info_extra img[alt="Freeleech"] {
+  display: none;
+}
+
+.torrent__info_extra .icon {
+  width: 18px;
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.torrent__info__time {
+  vertical-align: middle;
+  margin-top: 2px;
+  display: inline-block;
+  color: #cccccc;
+}
+
+@media (max-width: 1500px) {
+  .torrent__info__time {
+    display: none;
+  }
+}
+
+.torrent__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.trim {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+hr.dashed {
+  border-top: 1px dashed #8c8b8b;
+}
+hr.double {
+  border-top: 3px double #8c8b8b;
+}
